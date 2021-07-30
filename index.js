@@ -3,7 +3,7 @@ const routes = require('./routes');
 const bodyParser = require('./bodyParser');
 
 const app = express();
-const port = 3000;
+const port = process.env.port || 5000;
 
 bodyParser(app);
 routes(app);
